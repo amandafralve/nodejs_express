@@ -11,5 +11,13 @@
     <h3>Bem vindo, esta é na página de vídeos</h3>
     <p>Escolha uma playlist ou o vídeo que deseja reproduzir:</p>
     
+    <%if (playlist && !video) {%>
+            <h2>Você está na playlist de <%= playlist%>.</h2>
+        <%}else if (playlist && video){%>
+            <h2>Você está na playlist <%= playlist%></h2>
+            <p>Reproduzindo o vídeo <%= video%></p>
+        <%} else {%>
+            <h1>Página de vídeos</h1>
+    <%}%>
 </body>
 </html>
