@@ -14,13 +14,12 @@
         <p><%= listaProdutos %></p>
 
      <% } %>
-
      
      <!-- CONDIÇÃO PARA VERIFICAR SE O PRODUTO NÃO FOI PASSADO com forEach -->
      <% if(!produto){ %>
-        <%= listaProdutos.forEach((produto) => {
-            <p><a href="/produtos/<% produto %>"><% produto %></a></p>
-        }) %>
+        <% listaProdutos.forEach((produto) => { %>
+            <p><a href="/produtos/<% produto %>"><%= produto %></a></p>
+        <% }) %>
 
      <% } %>
 
