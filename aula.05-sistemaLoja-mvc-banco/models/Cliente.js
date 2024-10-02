@@ -20,4 +20,4 @@ const Cliente = connection.define('clientes',{
     
 });
 Cliente.sync({force: false});
-export default connection;
+export default Cliente;
