@@ -56,8 +56,7 @@
                                     <td>
                                         <%= cliente.endereco %>
                                     </td>
-                                    <td><a style="color: orange;" href="/clientes/edit/<%= cliente.id %>"
-                                        onclick="return confirm('Deseja editar os dados do cliente <%= cliente.nome %>?')">Editar</a></td>
+                                    <td><a style="color: orange;" href="/clientes/edit/<%= cliente.id %>">Editar</a></td>
                                     <td><a style="color: red;" href="/clientes/delete/<%= cliente.id %>"
                                         onclick="return confirm('Deseja realmente apagar o cliente <%= cliente.nome %>?')">Apagar</a></td>
                                 </tr>
