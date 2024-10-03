@@ -17,7 +17,7 @@ const Cliente = connection.define('clientes',{
         type: Sequelize.STRING,
         allowNull: false
     }
-    
 });
+
 Cliente.sync({force: false});
 export default Cliente;

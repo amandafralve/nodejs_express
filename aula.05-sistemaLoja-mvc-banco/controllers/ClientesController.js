@@ -4,9 +4,8 @@ const router = express.Router()
 import Cliente from '../models/Cliente.js'
 
 // ROTA CLIENTES
-
 router.get("/clientes", function(req,res){
-    Cliente.findAll().then((clientes) =>{
+    Cliente.findAll().then(clientes =>{
         res.render("clientes", {
             clientes: clientes
         })
