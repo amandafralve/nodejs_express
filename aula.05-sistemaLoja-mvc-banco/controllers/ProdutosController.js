@@ -35,8 +35,8 @@ router.get("/produtos/delete/:id", (req,res) => {
             id:id
         }
     }).then(()=>{
-        res.redirect("/produtos/")
-    }).catch((error) => {
+        res.redirect("/produtos")
+    }).catch(error => {
         console.log(error);
     })
 })

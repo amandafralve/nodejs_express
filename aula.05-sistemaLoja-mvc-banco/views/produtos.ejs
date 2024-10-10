@@ -47,7 +47,7 @@
                             <td><%= produto.preco.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'}) %></td>
                             <td><%= produto.categoria %></td>
                             <td><a style="color: orange" href="/produtos/edit/<%= produto.id %>">Editar</a></td>
-                            <td><a href="/produto/delete <%= produto.id %>" onclick="return confirm('Deseja realmente apagar esse cadastro?')">Apagar</a></td>
+                            <td><a href="/produtos/delete/<%= produto.id %>" onclick="return confirm('Deseja realmente apagar esse cadastro?')">Apagar</a></td>
                         </tr>
                         <% }) %>
                     </tbody>
