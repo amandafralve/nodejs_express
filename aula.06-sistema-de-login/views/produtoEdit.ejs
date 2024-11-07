@@ -4,28 +4,26 @@
 <div class="container">
     <div class="card">
         <div class="card-header">
-            <h1>Editar Produto</h1>
-            <hr>
+            <h1>Editar produto</h1>
         </div>
         <div class="card-body">
             <form action="/produtos/update" method="post">
+                <label>Nome do produto:</label>
+                <input  class="form-control" type="text" name="nome" id="nome" value="<%= produto.nome %>" required>
 
-                <label>Nome do Produto:</label>
-                <input class="form-control" type="text" name="nome" id="nome" value="<%= produto.nome %>" required>
-
-                <label>Preço do Produto</label>
+                <label>Preço do produto R$</label>
                 <input class="form-control" type="text" name="preco" id="preco" value="<%= produto.preco %>" required>
 
-                <label>Categoria Produto</label>
+                <label>Categoria do produto:</label>
                 <input class="form-control" type="text" name="categoria" id="categoria" value="<%= produto.categoria %>" required>
 
-                <input type="hidden" name="id" id="id" value="<%= produto.id %>">
+                <input type="hidden" name="id" value="<%= produto.id %>">
                 <br>
-
-                <input type="submit" class="btn btn-warning" value="Alterar" onclick="return confirm('Confirma as alterações dos dados?')">
+                <input type="submit" class="btn btn-warning" value="Alterar" onclick="return confirm('Deseja realmente alterar o produto <%= produto.nome %>?')">
             </form>
+            <hr>
         </div>
     </div>
 </div>
 
-<%- include ('partials/footer.ejs') %>
+<%- include('partials/footer.ejs') %>

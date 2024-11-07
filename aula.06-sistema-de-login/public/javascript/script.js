@@ -1,1 +1,1 @@
-window.alert("Script importado com sucesso");
+window.alert('Script importado com sucesso!')

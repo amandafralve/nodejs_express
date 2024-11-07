@@ -1,17 +1,8 @@
 <%- include ('partials/navbar.ejs') %>
 <%- include ('partials/header.ejs') %>
-
-<div class="texto-total">    
-    <h1>Home videos</h1>
-
-    <%if (playlist && !video) {%>
-        <h2>Você está na playlist de <%= playlist%>.</h2>
-    <%}else if (playlist && video){%>
-        <h2>Você está na playlist <%= playlist%></h2>
-        <p>Reproduzindo o vídeo <%= video%></p>
-    <%} else {%>
-        <h1>Página de vídeos</h1>
-    <%}%>
-</div>
-    
+    <h1>Bem-vindo aos vídeos</h1>
+    <hr>
+    <p>Aqui estão os vídeos do site :O</p>   
+</body>
+</html>
 <%- include ('partials/footer.ejs') %>
